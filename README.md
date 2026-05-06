@@ -8,4 +8,4 @@ I built this to enhance my full-stack building abilites.
 You can run with Maven using mvn compile. 
 
 
-Dependcies used are java spring Security, DataJPA, h2 Databse, starter Webmvc, validation
+Dependencies used are java spring Security, DataJPA, h2 Databse, starter Webmvc, validation
