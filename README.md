@@ -3,5 +3,9 @@ Task Tracker application using CRUD operations. Developed using Java and Spring 
 
 This application has helped me stay organized for my daily objectives and goals. 
 I built this to enhance my full-stack building abilites. 
+
+
 You can run with Maven using mvn compile. 
+
+
 Dependcies used are java spring Security, DataJPA, h2 Databse, starter Webmvc, validation
