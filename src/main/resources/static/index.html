@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Tasks</h2>
+        <nav>
+            <button data-filter="today" class="active">Today</button>
+            <button data-filter="scheduled">Scheduled</button>
+            <button data-filter="all">All Tasks</button>
+            <button data-filter="completed">Completed</button>
+        </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+        <header class="header">
+            <div>
+                <h1 id="viewTitle">Today</h1>
+                <p id="viewSubtitle" class="subtitle">Open tasks due today.</p>
+            </div>
+        </header>
+
+        <ul id="taskList" class="task-list"></ul>
+
+        <div id="emptyState" class="empty hidden">
+            <p>No tasks here yet.</p>
+        </div>
+    </main>
+
+</div>
+
+<!-- Floating Button -->
+<button id="openModalBtn" class="fab">＋</button>
+
+<!-- Modal -->
+<div id="modal" class="modal hidden">
+    <div class="modal-card">
+        <h2 id="modalTitle">New Task</h2>
+
+        <input id="title" placeholder="Task title" />
+        <textarea id="description" placeholder="Description"></textarea>
+        <input id="date" type="date" />
+
+        <select id="priority">
+            <option value="">Select priority</option>
+            <option value="LOW">Low</option>
+            <option value="MEDIUM">Medium</option>
+            <option value="HIGH">High</option>
+        </select>
+
+        <select id="status" class="hidden">
+            <option value="OPEN">Open</option>
+            <option value="COMPLETE">Complete</option>
+        </select>
+
+        <div class="modal-actions">
+            <button id="cancelBtn" type="button">Cancel</button>
+            <button id="submitBtn" type="button">Create Task</button>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
